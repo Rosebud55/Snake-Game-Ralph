@@ -1,0 +1,87 @@
+/* Intro Page CSS -----------------------------------------------------------------------------------------------------------------*/
+html {
+  height: 100%;
+  width: 100%;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: bisque;
+}
+.mainTitle {
+  display: flex;
+  align-items: center;
+  left: 15%;
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.mainTitle h1 {
+  font-size: 100px;
+  color: Green;
+  font-family: "Snake";
+  display: inline-block;
+  margin-right: 25px;
+}
+.mainTitle span {
+  font-family: "Bloody";
+  color: rgb(175, 7, 7);
+  font-size: 100px;
+  display: inline-block;
+}
+.crawlContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(39, 37, 37);
+  overflow: hidden;
+  align-items: center;
+  font-size: 25px;
+  color: bisque;
+  font-family: "Retro";
+  text-align: center;
+}
+@font-face {
+  font-family: "Retro";
+  src: url("PublicPixel-z84yD.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Snake";
+  src: url("GingerSnake-lPrd.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Bloody";
+  src: url("BloodScratch-LRJZ.woff2") format("woff2");
+  font-weight: bold;
+}
+.crawlText {
+  position: relative;
+  white-space: nowrap;
+  animation-name: scroll-up;
+  animation-duration: 60s;
+  animation-delay: 180ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+  align-self: center;
+}
+
+@keyframes scroll-up {
+  from {
+    top: 100%;
+    width: 100%;
+  }
+  to {
+    top: -100%;
+    width: 100%;
+  }
+}
+
+.crawlText p {
+  margin: 20px 0;
+  line-height: 1.5;
+}

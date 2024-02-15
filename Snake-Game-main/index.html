@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Snake: Revenge of the Apples!</title>
+  </head>
+
+  <body>
+    <div class="mainScreen">
+      <div class="gameTitle">
+      <h1> Snake:</h1><span>Revenge Of the Apple!</span>
+    </div>
+      <div class="scoreWrapper">
+        <button id="restart-btn" class="restart-btn">Restart</button>
+        <div class="scoreText">
+          <h1>Score:</h1>
+        </div>
+        <div id="score" class="score">0</div>
+      </div>
+      <div class="highscores">
+        <H1 class="highscorestext">HighScores</H1>
+        
+        <table>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="highScoreTable">
+            <tr>
+              <td>1</td>
+              <td>John</td>
+              <td>9999</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Emma</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Liam</td>
+              <td>180</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Olivia</td>
+              <td>160</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Noah</td>
+              <td>140</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Ava</td>
+              <td>110</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>William</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Sophia</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>James</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Mr.nobody</td>
+              <td>60</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="textOverlay">Press Enter to start the game</div>
+      <canvas id="gameCanvas" width="600" height="600"> </canvas>
+    </div>
+    <link rel="stylesheet" href="style.css" />
+    <script src="snake2.js"></script>
+  </body>
+</html>

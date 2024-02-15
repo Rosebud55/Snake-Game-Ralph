@@ -1,0 +1,191 @@
+html {
+  background-color: rgb(39, 37, 37);
+}
+.mainScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+#gameCanvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid bisque;
+  z-index: 2;
+  margin-top: 25px;
+}
+.highscores,
+.score,
+.scoreText,
+.restart-btn {
+  font-family: "Retro";
+}
+.scoreWrapper {
+  position: absolute;
+  top: 10px;
+  left: 35%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.restart-btn {
+  color: bisque;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 17px;
+  border-radius: 23px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(145, 16, 7) 0%,
+    rgb(145, 16, 7) 50%,
+    rgb(145, 16, 7) 100%
+  );
+  box-shadow: rgb(0, 0, 0) 6px -1px 45px 9px;
+  border: 2px solid rgb(54, 51, 51);
+  display: inline-block;
+  margin-right: 250px;
+}
+
+.restart-btn:hover {
+  background: #1a1d1f;
+}
+
+.restart-btn:active {
+  background: #2c3338;
+}
+.scoreText {
+  font-size: 32px;
+  color: bisque;
+  display: inline-block;
+}
+
+.score {
+  font-size: 60px;
+  color: bisque;
+  display: inline-block;
+}
+
+#textOverlay {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: bisque;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: "Retro";
+  src: url("PublicPixel-z84yD.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Bloody";
+  src: url("BloodScratch-LRJZ.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Snake";
+  src: url("GingerSnake-lPrd.woff2") format("woff2");
+  font-weight: bold;
+}
+.highscores {
+  position: relative;
+  top: 19.8%;
+  right: 15px;
+  height: 600px;
+  align-self: flex-end;
+  margin-left: 20px;
+  color: bisque;
+  border: 2px solid bisque;
+  border-radius: 5px;
+  text-align: center;
+}
+.highscores th,
+td {
+  border: 1px solid bisque;
+}
+.highscores th {
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+.highscores td {
+  text-align: center;
+  font-size: 30px;
+}
+
+.gameTitle {
+  position: absolute;
+  top: 50%;
+  left: 7.5%;
+  max-width: 400px;
+  transform: translateY(-50%);
+}
+
+.gameTitle h1 {
+  font-family: "Snake";
+  font-size: 120px;
+  position: top;
+  /* left: 20%; */
+  color: rgb(3, 124, 3);
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+}
+.gameTitle span {
+  font-family: "Bloody";
+  font-size: 80px;
+  color: rgb(175, 7, 7);
+  text-align: center;
+  word-wrap: break-word;
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .highscores {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    margin-top: 25px;
+    margin-left: 0;
+    width: 62%;
+  }
+  .gameTitle {
+    display: none;
+  }
+  .scoreText {
+    font-size: 25px;
+  }
+  .score {
+    font-size: 40px;
+  }
+}
